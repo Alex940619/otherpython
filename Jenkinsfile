@@ -4,7 +4,7 @@ pipeline {
  stages {
         stage('Checkout-git'){
                steps{
-		git poll: true, url: 'https://github.com/Alex940619/otherpython.git'
+		git poll: true, url: 'git@github.com:Alex940619/otherpython.git'
                }
         }
         stage('CreateVirtualEnv') {
